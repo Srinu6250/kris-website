@@ -1,0 +1,764 @@
+#parent {
+    text-align: center;
+    background-image: url(https://img.freepik.com/free-photo/close-up-businesspeople-working-with-documents_1098-1263.jpg?t=st=1725542892~exp=1725546492~hmac=4e360ac842bec0838a9f98a0d9dcdbc321a04d7edf136b955748bb7646efc298&w=1380);
+    height: 64.5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 102, 0.8);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay img {
+    position: absolute;
+    left: 15px;
+    top: 50px;
+}
+
+#main-child {
+
+    position: relative;
+    top: 20rem;
+    color: white;
+}
+
+.log-in h1 {
+    margin-bottom: 14px;
+}
+
+.log-in p {
+    font-size: 22px;
+}
+
+.email-address,
+.pass {
+    margin-right: 18rem;
+
+}
+
+/* label {
+    display: block;
+    text-align: left;
+   
+    margin-bottom: 5px;
+} */
+
+.pass p {
+    margin-right: 28px;
+    margin-top: 18px;
+}
+
+.email input,
+.password input {
+    width: 18.5%;
+    padding: 9px;
+    border: none;
+}
+
+#child {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.checkbox input {
+    padding: 2px;
+}
+
+.checkbox {
+    margin-right: 143px;
+}
+
+.button {
+    width: 37.5%;
+    margin-left: 20.2rem;
+}
+
+.remember {
+    margin-right: 10rem;
+}
+
+.checkbox input,
+.reset p {
+    cursor: pointer;
+}
+
+#page-two,
+#page-three {
+
+    background-color: rgb(18, 28, 62);
+    width: 20%;
+    height: 65rem;
+    color: white;
+}
+
+.page-two-logo {
+    width: 132px;
+    margin-left: 85px;
+    margin-bottom: 36px;
+}
+
+.admin {
+    display: flex;
+    margin-left: 26px;
+}
+
+.kris-admin {
+    margin-top: 27px;
+    margin-left: 29px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.page-two-menu {
+    margin-top: 34px;
+    margin-left: 30px;
+}
+
+.icon {
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+.page-two-menu li {
+    margin-left: -29px;
+}
+
+#page-two button {
+    width: 22rem;
+    margin-left: -106px;
+    background-color: red;
+    border-radius: 11px;
+    border: none;
+    padding: 13px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.power-off {
+    font-size: 28px;
+    position: absolute;
+    top: 124rem;
+    left: 7rem;
+}
+
+#enterEmail,
+#enterPassword {
+    color: red;
+    margin-right: 15.5rem;
+    margin-top: 14px;
+    font-family: sans-serif;
+}
+
+#enterPassword {
+    margin-right: 13.5rem;
+}
+
+#parent-two {
+    display: flex;
+    background-color: #E3EDF9;
+}
+
+#page-two-part-one {
+    width: 120%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 37px;
+    margin-left: -151px;
+}
+
+.bars {
+    font-size: 50px;
+}
+
+.forms {
+    display: flex;
+}
+
+.forms .form-select {
+    height: 49px;
+    background-color: #253D90;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.forms input {
+    padding: 11px;
+    width: 250%;
+    border: none;
+
+}
+
+.magnifier {
+    font-size: 20px;
+    position: relative;
+    bottom: 2rem;
+    left: 21rem;
+}
+
+
+.page-two-icons .bell {
+    font-size: 31px;
+    background-color: #253D90;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+}
+
+.page-two-icons .wrench {
+    font-size: 31px;
+    background-color: #FFC20E;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+}
+
+.page-two-icons .envelope {
+    font-size: 31px;
+    background-color: #3F861E;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+}
+
+#page-two-part-two h5 {
+    margin-left: 44px;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+.page-two-menu ul li {
+    cursor: pointer;
+    width: 95%;
+    border-radius: 12px;
+}
+
+#cards {
+    display: flex;
+    margin-left: 40px;
+}
+
+.card i {
+    font-size: 80px;
+}
+
+.card-one .card {
+    background-color: #FFC20E;
+    border: none;
+    border-radius: 16px;
+    padding: 0px;
+    width: 43%;
+    margin-right: 26px;
+
+}
+
+.one {
+    display: flex;
+
+}
+
+.card-one-text {
+    margin-top: 30px;
+    margin-right: 37px;
+}
+
+.card-one-text p {
+    font-weight: 700;
+}
+
+.card-two .card {
+    background-color: #253D90;
+    color: white;
+    border-radius: 16px;
+    margin-right: 26px;
+
+}
+
+.card-two-text {
+    margin-top: 30px;
+    margin-right: 70px;
+}
+
+.card-two-text p {
+    font-weight: 700;
+
+}
+
+.card-three .card {
+    background-color: #3F861E;
+    color: white;
+    border-radius: 16px;
+    margin-right: 26px;
+}
+
+.card-four .card {
+    background-color: #232423;
+    color: white;
+    border-radius: 16px;
+    margin-right: 26px;
+}
+
+.card-five .card {
+    background-color: #FFC20E;
+
+    border-radius: 16px;
+    margin-right: 26px;
+}
+
+.access-bank,
+.paystack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales-executive,
+.user-experience-design,
+.product-manager {
+    margin-left: -111px;
+    margin-top: -8px;
+}
+
+.img-fluid-rounded-start {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.applied-jobs-one,
+.applied-jobs-two,
+.applied-jobs-three {
+    background-color: #E3EDF9;
+    height: 71px;
+    border-radius: 20px;
+    width: 240%;
+    margin-bottom: 15px;
+
+}
+
+.page-two-part-three .card {
+    height: 318px;
+    width: 192%;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+
+}
+
+.parent-two-child-one,
+.parent-two-child-two {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 148px;
+    padding-right: 35rem;
+}
+
+#parent-four,
+#parent-five {
+    background-color: #E3EDF9;
+}
+
+#page-three {
+    width: 112.3%;
+
+}
+
+.page-three-logo {
+
+    width: 132px;
+    margin-left: -76px;
+    margin-bottom: 36px;
+}
+
+.page-three-menu {
+    margin-top: 34px;
+    margin-left: -78px;
+}
+
+/* .page-three-menu ul li{
+    margin-left: -7rem;
+} */
+
+.dashboard {
+    margin-left: -11rem;
+}
+
+.jobs {
+    margin-left: -14rem;
+}
+
+.candidates {
+    margin-left: -11rem;
+}
+
+.resumes {
+    margin-left: -13rem;
+}
+
+.employee-management {
+    margin-left: -6rem;
+}
+
+.leave-management {
+    margin-left: -7rem;
+}
+
+.performance-management {
+    margin-left: -4rem;
+}
+
+.payroll {
+    margin-left: -7rem;
+}
+
+
+.page-three-menu p {
+    margin-left: -12rem;
+}
+
+#page-three button {
+    width: 22rem;
+    margin-left: -18px;
+    background-color: red;
+    border-radius: 11px;
+    border: none;
+    padding: 13px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+#page-three .power-off {
+    font-size: 28px;
+    position: absolute;
+    top: 189rem;
+    left: 7rem;
+}
+
+#page-three-part-one {
+    width: 230%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 37px;
+    margin-left: -151px;
+}
+
+#parent-three {
+    background-color: #E3EDF9;
+}
+
+.page-three-magnifier {
+    font-size: 20px;
+    position: relative;
+    bottom: 2rem;
+    left: 17rem;
+}
+
+.page p {
+    margin-left: -29rem;
+    margin-top: 1rem;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Product sans-serif;
+}
+
+.page .fa-solid {
+    margin-right: 10px;
+}
+
+.page-three-buttons {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 1px 346px; */
+    width: 186%;
+    margin-left: 3rem;
+}
+
+.page-three-buttons button {
+    background-color: rgb(18, 28, 62);
+    border: none;
+    width: 371px;
+    height: 63px;
+}
+
+#page-three-part-two {
+    background-color: rgb(15, 43, 143);
+    display: flex;
+    margin-left: 4rem;
+    width: 182%;
+    margin-top: 40px;
+    border-radius: 30px;
+    color: white;
+    height: 36%;
+}
+
+.page-three-part-two-text {
+    margin-left: 20px;
+    margin-top: 180px;
+}
+
+.page-three-part-two-image-one {
+    margin-left: 30rem;
+}
+
+.page-three-part-two-text h1 {
+    width: 250%;
+    font-size: 3.5rem;
+    margin-left: -14rem;
+}
+
+.page-three-part-two-text span {
+    color: #FFC20E;
+}
+
+.page-three-part-two-text p {
+    margin-left: 76px;
+    font-family: Product Sans;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30.33px;
+    text-align: left;
+
+}
+
+.page-three-part-two-image-two {
+    width: 209px;
+    height: 156px;
+    position: absolute;
+    left: 45rem;
+    gap: 0px;
+}
+
+.page-three-part-two-image-three {
+    width: 209px;
+    height: 156px;
+    position: absolute;
+    top: 160.4rem;
+    left: 76rem;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #E3EDF9;
+    ;
+}
+
+.action-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 13px;
+}
+
+#page-three-part-three {
+    width: 182%;
+    margin-left: 4rem;
+    background-color: white;
+    padding: 48px;
+    margin-top: 30px;
+    border-radius: 30px;
+    height: 70%;
+}
+
+#page-three-part-three h2 {
+    text-align: left;
+}
+
+.table {
+    background-color: #E3EDF9;
+    height: 88%;
+}
+
+.font-and-form {
+    display: flex;
+}
+
+.page-three-leave-history {
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-and-form i {
+    font-size: 38px;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.font-and-form select {
+    padding: 14px 32px;
+    margin-top: 10px;
+    background-color: #3F861E;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+#parent-five table select {
+    background-color: green;
+    color: white;
+    width: 56%;
+    padding: 9px 21px;
+}
+
+#parent-six {
+    background-color: #E3EDF9;
+}
+
+#page-six-part-one {
+    display: flex;
+}
+
+#page-six-part-one h2 {
+    font-family: Product Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.33px;
+    text-align: left;
+    margin-top: 26px;
+    margin-bottom: 26px;
+
+}
+
+#page-six-part-one .col-4 {
+    flex: 0 0 auto;
+    width: 80%;
+    margin-left: 63px;
+}
+
+.page-six-form-one,
+.page-six-form-three {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.page-six-form-one input,
+.page-six-form-three input {
+    width: 135%;
+}
+
+.page-six-form-one select,
+.page-six-form-three select {
+    width: 100%;
+}
+
+.duration {
+    margin-right: 14rem;
+}
+
+.page-six-form-two,
+.page-six-form-four,
+.page-six-form-five {
+    text-align: justify;
+    margin-top: 26px;
+}
+
+.page-six-form-three-part-two h6 {
+    margin-bottom: -1rem;
+}
+
+.page-six-form-three {
+    margin-top: 26px;
+
+}
+
+.page-six-form-three input {
+    width: 117%;
+}
+
+.page-six-form-three-part-two {
+    margin-right: 3rem;
+}
+.page-six-form-five input{
+    height: 110px;
+}
+.gap-2{
+    margin-top: 41px;
+    height: 54px;
+}
+.gap-2 button{
+    background-color: #3F861E;
+    border-radius: 20px;
+    font-family: Product Sans;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#page-six-part-one .col-4 {
+    background-color: white;
+    padding: 0px 35px;
+    margin-top: 36px;
+    border-radius: 26px;
+    width: 86%;
+    height: 45rem;
+}
+#page-six-part-one .col-4 input ,#page-six-part-one .col-4 select {
+    background-color: #E3EDF9;
+    border: none;
+    
+}
+.col-4 #page-six-part-two select{
+    background-color: #253D90;
+    color: white;
+    width: 100%;
+    padding: 9px 21px;
+}
+.col-4 #page-six-part-two td{
+    font-family: Product Sans;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 40.98px;
+    text-align: justify;
+}
+#page-seven-parent-one {
+    display: flex;
+   
+    width:100%;
+}
+
+#page-six-part-one ul {
+    list-style-type: none;
+    width: 120%;
+    text-align: center;
+
+}
+
+#page-six-part-one ul li {
+    padding: 25px;
+    background-color: rgb(230, 237, 248);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+}

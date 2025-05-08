@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/login.css" rel="stylesheet">
+    <link href="./scripts/login.js" rel="script" />
+    <link href="./admin-section.html" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <div id="parent">
+
+
+        <div class="overlay">
+            <img src="./assets/kris logo 2 1.png" />
+        </div>
+        <div id="main-child">
+
+            <div class="log-in">
+                <h1>Log In</h1>
+                <p>Login to your account.</p>
+            </div>
+            <div class="email-address">
+                <p>E-mail address</p>
+            </div>
+            <div class="email">
+
+                <input type="email" id="email" name="email">
+                <p id="enterEmail"> </p>
+            </div>
+            <div class="pass">
+                <p>Password</p>
+            </div>
+            <div class="password">
+                <input type="password" id="password" />
+                <p id="enterPassword"> </p>
+            </div>
+            <div id="child">
+                <div class="checkbox">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div class="reset">
+                    <p>Reset Password?</p>
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary button" type="button" onclick="login()">Sign In</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="parent-two">
+        <div id="page-two">
+            <img class="page-two-logo" src="./assets/kris logo 2 1.png" />
+            <div class="admin">
+                <div>
+                    <img src="./assets/Group 46.png" />
+                </div>
+                <div class="kris-admin">
+                    <h4>KRIS Admin</h4>
+                    <p>Admin</p>
+                </div>
+            </div>
+            <div class="page-two-menu">
+
+                <p>Features</p>
+
+                <ul>
+                    <li onclick="selectTab(0)" class="details"><span class="icon"><i
+                                class="fa-solid fa-border-all"></i></span>Dashboard</li>
+                    <li onclick="selectTab(1)" class="details"><span class="icon"><i
+                                class="fa-solid fa-envelope"></i></span>Messages</li>
+                </ul>
+
+                <p>Recruitement</p>
+
+                <ul>
+                    <li onclick="selectTab(2)" class="details"><span class="icon"><i
+                                class="fa-solid fa-suitcase"></i></span>Jobs</li>
+                    <li onclick="selectTab(3)" class="details"><span class="icon"><i
+                                class="fa-solid fa-user-group"></i></span>Candidates</li>
+                    <li onclick="selectTab(4)" class="details"><span class="icon"><i
+                                class="fa-solid fa-file"></i></span>Resumes</li>
+                </ul>
+
+                <p>Organization</p>
+
+                <ul>
+                    <div>
+                        <li onclick="selectTab(5)" class="details"><span class="icon"><i
+                                    class="fa-solid fa-user"></i></span>Employee Management</li>
+                        <li onclick="selectTab(6)" class="details"><span class="icon"><i
+                                    class="fa-solid fa-book-open"></i></span>Leave Management</li>
+                        <li onclick="selectTab(7)" class="details"><span class="icon"><i
+                                    class="fa-solid fa-scale-balanced"></i></span>Performance Management
+                        </li>
+                    </div>
+                </ul>
+
+                <p>Kris Pay</p>
+
+                <div>
+                    <ul>
+                        <li onclick="selectTab(8)" class="details"><span class="icon"><i
+                                    class="fa-solid fa-money-bill-wave"></i></span>Payroll Management</li>
+                    </ul>
+                </div>
+
+                <span class="power-off"><i class="fa-solid fa-power-off"></i></span>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Log Out</button>
+                </div>
+            </div>
+        </div>
+        <div class="page-two-body">
+            <div id="page-two-part-one">
+                <div>
+                    <i class="fa-solid fa-bars-staggered bars"></i>
+                </div>
+                <div class="forms">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div>
+                        <input type="search" placeholder="Search" />
+                        <i class="fa-solid fa-magnifying-glass magnifier"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="page-two-icons">
+                    <i class="fa-regular fa-bell bell"></i>
+                    <i class="fa-solid fa-wrench wrench"></i>
+                    <i class="fa-regular fa-envelope envelope"></i>
+                </div>
+            </div>
+
+            <div id="page-two-part-two">
+                <div>
+                    <h5>Dashboard</h5>
+                </div>
+                <div id="cards">
+                    <div class="card-one">
+                        <div class="card" style="width: 18rem ;">
+                            <div class="one">
+                                <div class="card-body">
+                                    <i class="fa-regular fa-envelope envelope-two"></i>
+                                </div>
+                                <div class="card-one-text">
+                                    <h2>138</h2>
+                                    <p>Messages</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-two">
+                        <div class="card" style="width: 18rem ;">
+                            <div class="one">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-suitcase"></i>
+                                </div>
+                                <div class="card-two-text">
+                                    <h2>50</h2>
+                                    <p>Jobs</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-three">
+                        <div class="card" style="width: 18rem ;">
+                            <div class="one">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-user-group"></i>
+                                </div>
+                                <div class="card-one-text">
+                                    <h2>100</h2>
+                                    <p>Candidates</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-four">
+                        <div class="card" style="width: 18rem ;">
+                            <div class="one">
+                                <div class="card-body">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                </div>
+                                <div class="card-one-text">
+                                    <h2>50</h2>
+                                    <p>Resumes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-five">
+                        <div class="card" style="width: 18rem ;">
+                            <div class="one">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="card-one-text">
+                                    <h2>50</h2>
+                                    <p>Resumes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="parent-two-child-one">
+                <div class="page-two-part-three">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Applied jobs</h5>
+                        </div>
+                        <div>
+                            <div class="card mb-3"
+                                style="max-width: 211px; height: 72px; margin-top: -260px; border: none;">
+                                <div class="applied-jobs-one">
+                                    <div class="row g-0 ">
+                                        <div class="col-md-4">
+                                            <img src="./assets/Rectangle 34.png" class="img-fluid-rounded-start" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body ">
+                                                <div class="sales-executive">
+                                                    <h5 class="card-title">Sales Executive</h5>
+                                                    <div class="access-bank">
+                                                        <p class="card-text">Access Bank</p>
+                                                        <p class="card-text"><small class="text-body-secondary">20mins
+                                                                ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="applied-jobs-two">
+                                    <div class="row g-0 ">
+                                        <div class="col-md-4">
+                                            <img src="./assets/Rectangle 34.png" class="img-fluid-rounded-start" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body ">
+                                                <div class="user-experience-design">
+                                                    <h5 class="card-title">User Experience Design</h5>
+                                                    <div class="access-bank">
+                                                        <p class="card-text">Paystack</p>
+                                                        <p class="card-text"><small class="text-body-secondary">10mins
+                                                                ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="applied-jobs-three">
+                                    <div class="row g-0 ">
+                                        <div class="col-md-4">
+                                            <img src="./assets/Rectangle 34.png" class="img-fluid-rounded-start" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body ">
+                                                <div class="product-manager">
+                                                    <h5 class="card-title">Product manager</h5>
+                                                    <div class="access-bank">
+                                                        <p class="card-text">TPay</p>
+                                                        <p class="card-text"><small class="text-body-secondary">5mins
+                                                                ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="page-two-part-three">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>Employees</h5>
+                            </div>
+                            <div>
+                                <div class="card mb-3"
+                                    style="max-width: 211px; height: 72px; margin-top: -260px; border: none;">
+                                    <div class="applied-jobs-one">
+                                        <div class="row g-0 ">
+                                            <div class="col-md-4">
+                                                <img src="./assets/Ellipse 12.png" class="img-fluid-rounded-start" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body ">
+                                                    <div class="sales-executive">
+                                                        <h5 class="card-title">John Doe</h5>
+                                                        <div class="access-bank">
+                                                            <p class="card-text">Role : Product Manager</p>
+                                                            <p class="card-text"><small
+                                                                    class="text-body-secondary">20mins
+                                                                    ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="applied-jobs-two">
+                                        <div class="row g-0 ">
+                                            <div class="col-md-4">
+                                                <img src="./assets/Ellipse 13.png" class="img-fluid-rounded-start" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body ">
+                                                    <div class="user-experience-design">
+                                                        <h5 class="card-title">Ginna Loe</h5>
+                                                        <div class="access-bank">
+                                                            <p class="card-text">Role : Sales Executive</p>
+                                                            <p class="card-text"><small
+                                                                    class="text-body-secondary">10mins
+                                                                    ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="applied-jobs-three">
+                                        <div class="row g-0 ">
+                                            <div class="col-md-4">
+                                                <img src="./assets/Ellipse 14.png" class="img-fluid-rounded-start" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body ">
+                                                    <div class="product-manager">
+                                                        <h5 class="card-title">John Dore</h5>
+                                                        <div class="access-bank">
+                                                            <p class="card-text">Role : UI UX Designer</p>
+                                                            <p class="card-text"><small
+                                                                    class="text-body-secondary">5mins
+                                                                    ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <div class="parent-two-child-two">
+                    <div class="page-two-part-three">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>Candidates</h5>
+                            </div>
+                            <div>
+                                <div class="card mb-3"
+                                    style="max-width: 211px; height: 72px; margin-top: -260px; border: none;">
+                                    <div class="applied-jobs-one">
+                                        <div class="row g-0 ">
+                                            <div class="col-md-4">
+                                                <img src="./assets/Ellipse 12.png" class="img-fluid-rounded-start" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body ">
+                                                    <div class="sales-executive">
+                                                        <h5 class="card-title">John Doe</h5>
+                                                        <div class="access-bank">
+                                                            <p class="card-text">Applied for : Product Manager</p>
+                                                            <p class="card-text"><small
+                                                                    class="text-body-secondary">20mins
+                                                                    ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="applied-jobs-two">
+                                        <div class="row g-0 ">
+                                            <div class="col-md-4">
+                                                <img src="./assets/Ellipse 13.png" class="img-fluid-rounded-start" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body ">
+                                                    <div class="user-experience-design">
+                                                        <h5 class="card-title">Ginna Loe</h5>
+                                                        <div class="access-bank">
+                                                            <p class="card-text">Applied for : Sales Executive</p>
+                                                            <p class="card-text"><small
+                                                                    class="text-body-secondary">10mins
+                                                                    ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="applied-jobs-three">
+                                        <div class="row g-0 ">
+                                            <div class="col-md-4">
+                                                <img src="./assets/Ellipse 12.png" class="img-fluid-rounded-start" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body ">
+                                                    <div class="product-manager">
+                                                        <h5 class="card-title">James Foe</h5>
+                                                        <div class="access-bank">
+                                                            <p class="card-text">Applied for : Product Manager</p>
+                                                            <p class="card-text"><small
+                                                                    class="text-body-secondary">5mins
+                                                                    ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="page-two-part-three">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>April Payrolls</h5>
+                                </div>
+                                <div>
+                                    <div class="card mb-3"
+                                        style="max-width: 211px; height: 72px; margin-top: -260px; border: none;">
+                                        <div class="applied-jobs-one">
+                                            <div class="row g-0 ">
+                                                <div class="col-md-4">
+                                                    <img src="./assets/Ellipse 12.png"
+                                                        class="img-fluid-rounded-start" />
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body ">
+                                                        <div class="sales-executive">
+                                                            <h5 class="card-title">John Doe</h5>
+                                                            <div class="access-bank">
+                                                                <p class="card-text">Salary Amount : N500,000</p>
+                                                                <p class="card-text"><small
+                                                                        class="text-body-secondary">20mins
+                                                                        ago</small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="applied-jobs-two">
+                                            <div class="row g-0 ">
+                                                <div class="col-md-4">
+                                                    <img src="./assets/Ellipse 13.png"
+                                                        class="img-fluid-rounded-start" />
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body ">
+                                                        <div class="user-experience-design">
+                                                            <h5 class="card-title">Ginna Loe</h5>
+                                                            <div class="access-bank">
+                                                                <p class="card-text">Salary Amount : N150,000</p>
+                                                                <p class="card-text"><small
+                                                                        class="text-body-secondary">10mins
+                                                                        ago</small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="applied-jobs-three">
+                                            <div class="row g-0 ">
+                                                <div class="col-md-4">
+                                                    <img src="./assets/Ellipse 12.png"
+                                                        class="img-fluid-rounded-start" />
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body ">
+                                                        <div class="product-manager">
+                                                            <h5 class="card-title">James Foe</h5>
+                                                            <div class="access-bank">
+                                                                <p class="card-text">Applied for : Product Manager</p>
+                                                                <p class="card-text"><small
+                                                                        class="text-body-secondary">5mins
+                                                                        ago</small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parent-three">
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4" style="width: 30%;margin-left: -24rem;">
+                    <div id="page-three">
+                        <img class="page-three-logo" src="./assets/kris logo 2 1.png" />
+                        <div class="admin">
+                            <div>
+                                <img src="./assets/Group 46.png" />
+                            </div>
+                            <div class="kris-admin">
+                                <h4>KRIS Admin</h4>
+                                <p>Admin</p>
+                            </div>
+                        </div>
+                        <div class="page-three-menu">
+
+                            <p>Features</p>
+
+                            <ul class="dashboard">
+                                <li onclick="selectTab(0)"><span class="icon"><i
+                                            class="fa-solid fa-border-all"></i></span>Dashboard</li>
+                                <li onclick="selectTab(1)"><span class="icon"><i
+                                            class="fa-solid fa-envelope"></i></span>Messages</li>
+                            </ul>
+
+                            <p>Recruitement</p>
+
+                            <ul>
+                                <li onclick="selectTab(2)" class="jobs"><span class="icon"><i
+                                            class="fa-solid fa-suitcase"></i></span>Jobs</li>
+                                <li onclick="selectTab(3)" class="candidates"><span class="icon"><i
+                                            class="fa-solid fa-user-group"></i></span>Candidates</li>
+                                <li onclick="selectTab(4)" class="resumes"><span class="icon"><i
+                                            class="fa-solid fa-file"></i></span>Resumes
+                                </li>
+                            </ul>
+
+                            <p>Organization</p>
+
+                            <ul>
+                                <div>
+                                    <li onclick="selectTab(5)" class="employee-management"><span class="icon"><i
+                                                class="fa-solid fa-user"></i></span>Employee Management
+                                    </li>
+                                    <li onclick="selectTab(6)" class="leave-management"><span class="icon"><i
+                                                class="fa-solid fa-book-open"></i></span>Leave Management
+                                    </li>
+                                    <li onclick="selectTab(7)" class="performance-management"><span class="icon"><i
+                                                class="fa-solid fa-scale-balanced"></i></span>Performance
+                                        Management
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <p>Kris Pay</p>
+
+                            <div>
+                                <ul>
+                                    <li onclick="selectTab(8)" class="payroll"><span class="icon"><i
+                                                class="fa-solid fa-money-bill-wave"></i></span>Payroll
+                                        Management</li>
+                                </ul>
+                            </div>
+
+                            <span class="power-off"><i class="fa-solid fa-power-off"></i></span>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button">Log Out</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-8">
+                    <div id="page-three-part-one">
+                        <div>
+                            <i class="fa-solid fa-bars-staggered bars"></i>
+                        </div>
+                        <div class="forms">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div>
+                                <input type="search" placeholder="Search" />
+                                <i class="fa-solid fa-magnifying-glass page-three-magnifier"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="page-two-icons">
+                            <i class="fa-regular fa-bell bell"></i>
+                            <i class="fa-solid fa-wrench wrench"></i>
+                            <i class="fa-regular fa-envelope envelope"></i>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <p><span><i class="fa-solid fa-book-open "></i></span>Leave Management</p>
+                    </div>
+                    <div class="page-three-buttons">
+                        <button type="button" class="btn btn-primary btn-lg">Leave Settings</button>
+                        <button type="button" class="btn btn-primary btn-lg">Leave Recall</button>
+                        <button type="button" class="btn btn-primary btn-lg">Leave History</button>
+                        <button type="button" class="btn btn-primary btn-lg">Relief Officers</button>
+                    </div>
+
+                    <div id="page-three-part-two">
+                        <div class="page-three-part-two-image-two">
+                            <img src="./assets/arrow 2.png" />
+                        </div>
+                        <div class="page-three-part-two-text">
+                            <h1>Manage All <span>Leave Applications</span></h1>
+                            <p>A relaxed employee is a performing employee.</p>
+                        </div>
+                        <div class="page-three-part-two-image-one">
+                            <img src="./assets/leave 1.png" />
+                        </div>
+                        <div class="page-three-part-two-image-three">
+                            <img src="./assets/arrow 3.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="parent-four">
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4" style="width: 30%;margin-left: -24rem;">
+                    <div id="page-three">
+                        <img class="page-three-logo" src="./assets/kris logo 2 1.png" />
+                        <div class="admin">
+                            <div>
+                                <img src="./assets/Group 46.png" />
+                            </div>
+                            <div class="kris-admin">
+                                <h4>KRIS Admin</h4>
+                                <p>Admin</p>
+                            </div>
+                        </div>
+                        <div class="page-three-menu">
+
+                            <p>Features</p>
+
+                            <ul class="dashboard">
+                                <li><span class="icon"><i class="fa-solid fa-border-all"></i></span>Dashboard</li>
+                                <li><span class="icon"><i class="fa-solid fa-envelope"></i></span>Messages</li>
+                            </ul>
+
+                            <p>Recruitement</p>
+
+                            <ul>
+                                <li class="jobs"><span class="icon"><i class="fa-solid fa-suitcase"></i></span>Jobs</li>
+                                <li class="candidates"><span class="icon"><i
+                                            class="fa-solid fa-user-group"></i></span>Candidates</li>
+                                <li class="resumes"><span class="icon"><i class="fa-solid fa-file"></i></span>Resumes
+                                </li>
+                            </ul>
+
+                            <p>Organization</p>
+
+                            <ul>
+                                <div>
+                                    <li class="employee-management"><span class="icon"><i
+                                                class="fa-solid fa-user"></i></span>Employee Management
+                                    </li>
+                                    <li class="leave-management"><span class="icon"><i
+                                                class="fa-solid fa-book-open"></i></span>Leave Management
+                                    </li>
+                                    <li class="performance-management"><span class="icon"><i
+                                                class="fa-solid fa-scale-balanced"></i></span>Performance
+                                        Management
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <p>Kris Pay</p>
+
+                            <div>
+                                <ul>
+                                    <li class="payroll"><span class="icon"><i
+                                                class="fa-solid fa-money-bill-wave"></i></span>Payroll
+                                        Management</li>
+                                </ul>
+                            </div>
+
+                            <span class="power-off"><i class="fa-solid fa-power-off"></i></span>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button">Log Out</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-8">
+                    <div id="page-three-part-one">
+                        <div>
+                            <i class="fa-solid fa-bars-staggered bars"></i>
+                        </div>
+                        <div class="forms">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div>
+                                <input type="search" placeholder="Search" />
+                                <i class="fa-solid fa-magnifying-glass page-three-magnifier"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="page-two-icons">
+                            <i class="fa-regular fa-bell bell"></i>
+                            <i class="fa-solid fa-wrench wrench"></i>
+                            <i class="fa-regular fa-envelope envelope"></i>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <p><span><i class="fa-solid fa-book-open "></i></span>Leave Management</p>
+                    </div>
+                    <div class="page-three-buttons">
+                        <button type="button" class="btn btn-primary btn-lg">Leave Settings</button>
+                        <button type="button" class="btn btn-primary btn-lg">Leave Recall</button>
+                        <button type="button" class="btn btn-primary btn-lg">Leave History</button>
+                        <button type="button" class="btn btn-primary btn-lg">Relief Officers</button>
+                    </div>
+                    <div id="page-three-part-three">
+                        <h2>Ongoing Leave Applications</h2>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name(s)</th>
+                                    <th>Duration(s)</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Type</th>
+                                    <th>Reason(s)</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><button class="action-button">Recall</button></td>
+                                </tr>
+                                <tr class="table">
+                                    <td>Barry Jhayson</td>
+                                    <td>7</td>
+                                    <td>22/04/2022</td>
+                                    <td>30/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><button class="action-button">Recall</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiwa Cavage</td>
+                                    <td>7</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/06/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><button class="action-button">Recall</button></td>
+                                </tr>
+                                <tr class="table">
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><button class="action-button">Recall</button></td>
+                                </tr>
+                                <tr>
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><button class="action-button">Recall</button></td>
+                                </tr>
+                                <tr class="table">
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><button class="action-button">Recall</button></td>
+                                </tr>
+                                <tr>
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><button class="action-button">Recall</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parent-five">
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4" style="width: 30%;margin-left: -24rem;">
+                    <div id="page-three">
+                        <img class="page-three-logo" src="./assets/kris logo 2 1.png" />
+                        <div class="admin">
+                            <div>
+                                <img src="./assets/Group 46.png" />
+                            </div>
+                            <div class="kris-admin">
+                                <h4>KRIS Admin</h4>
+                                <p>Admin</p>
+                            </div>
+                        </div>
+                        <div class="page-three-menu">
+
+                            <p>Features</p>
+
+                            <ul class="dashboard">
+                                <li><span class="icon"><i class="fa-solid fa-border-all"></i></span>Dashboard</li>
+                                <li><span class="icon"><i class="fa-solid fa-envelope"></i></span>Messages</li>
+                            </ul>
+
+                            <p>Recruitement</p>
+
+                            <ul>
+                                <li class="jobs"><span class="icon"><i class="fa-solid fa-suitcase"></i></span>Jobs</li>
+                                <li class="candidates"><span class="icon"><i
+                                            class="fa-solid fa-user-group"></i></span>Candidates</li>
+                                <li class="resumes"><span class="icon"><i class="fa-solid fa-file"></i></span>Resumes
+                                </li>
+                            </ul>
+
+                            <p>Organization</p>
+
+                            <ul>
+                                <div>
+                                    <li class="employee-management"><span class="icon"><i
+                                                class="fa-solid fa-user"></i></span>Employee Management
+                                    </li>
+                                    <li class="leave-management"><span class="icon"><i
+                                                class="fa-solid fa-book-open"></i></span>Leave Management
+                                    </li>
+                                    <li class="performance-management"><span class="icon"><i
+                                                class="fa-solid fa-scale-balanced"></i></span>Performance
+                                        Management
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <p>Kris Pay</p>
+
+                            <div>
+                                <ul>
+                                    <li class="payroll"><span class="icon"><i
+                                                class="fa-solid fa-money-bill-wave"></i></span>Payroll
+                                        Management</li>
+                                </ul>
+                            </div>
+
+                            <span class="power-off"><i class="fa-solid fa-power-off"></i></span>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button">Log Out</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-8">
+                    <div id="page-three-part-one">
+                        <div>
+                            <i class="fa-solid fa-bars-staggered bars"></i>
+                        </div>
+                        <div class="forms">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div>
+                                <input type="search" placeholder="Search" />
+                                <i class="fa-solid fa-magnifying-glass page-three-magnifier"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="page-two-icons">
+                            <i class="fa-regular fa-bell bell"></i>
+                            <i class="fa-solid fa-wrench wrench"></i>
+                            <i class="fa-regular fa-envelope envelope"></i>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <p><span><i class="fa-solid fa-book-open "></i></span>Leave Management</p>
+                    </div>
+                    <div class="page-three-buttons">
+                        <button type="button" class="btn btn-primary btn-lg">Leave Settings</button>
+                        <button type="button" class="btn btn-primary btn-lg">Leave Recall</button>
+                        <button type="button" class="btn btn-primary btn-lg">Leave History</button>
+                        <button type="button" class="btn btn-primary btn-lg">Relief Officers</button>
+                    </div>
+                    <div id="page-three-part-three">
+                        <div class="page-three-leave-history">
+                            <div>
+                                <h2>Leave History</h2>
+                            </div>
+                            <div class="font-and-form">
+                                <div>
+                                    <i class="fa-solid fa-filter"></i>
+                                </div>
+                                <div>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Export</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name(s)</th>
+                                    <th>Duration(s)</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Type</th>
+                                    <th>Reason(s)</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><select class="form-select" aria-label="Default select example">
+                                            <option selected>Actions</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select></td>
+                                </tr>
+                                <tr class="table">
+                                    <td>Barry Jhayson</td>
+                                    <td>7</td>
+                                    <td>22/04/2022</td>
+                                    <td>30/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><select class="form-select" aria-label="Default select example">
+                                            <option selected>Actions</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiwa Cavage</td>
+                                    <td>7</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/06/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><select class="form-select" aria-label="Default select example">
+                                            <option selected>Actions</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select></td>
+                                </tr>
+                                <tr class="table">
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><select class="form-select" aria-label="Default select example">
+                                            <option selected>Actions</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><select class="form-select" aria-label="Default select example">
+                                            <option selected>Actions</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select></td>
+                                </tr>
+                                <tr class="table">
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><select class="form-select" aria-label="Default select example">
+                                            <option selected>Actions</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td>John Steven Doe</td>
+                                    <td>5</td>
+                                    <td>22/04/2022</td>
+                                    <td>28/04/2022</td>
+                                    <td>Casual</td>
+                                    <td>Personal</td>
+                                    <td><select class="form-select" aria-label="Default select example">
+                                            <option selected>Actions</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parent-six">
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4" style="width: 30%;margin-left: -24rem;">
+                    <div id="page-three">
+                        <img class="page-three-logo" src="./assets/kris logo 2 1.png" />
+                        <div class="admin">
+                            <div>
+                                <img src="./assets/Group 46.png" />
+                            </div>
+                            <div class="kris-admin">
+                                <h4>KRIS Admin</h4>
+                                <p>Admin</p>
+                            </div>
+                        </div>
+                        <div class="page-three-menu">
+
+                            <p>Features</p>
+
+                            <ul class="dashboard">
+                                <li><span class="icon"><i class="fa-solid fa-border-all"></i></span>Dashboard</li>
+                                <li><span class="icon"><i class="fa-solid fa-envelope"></i></span>Messages</li>
+                            </ul>
+
+                            <p>Recruitement</p>
+
+                            <ul>
+                                <li class="jobs"><span class="icon"><i class="fa-solid fa-suitcase"></i></span>Jobs</li>
+                                <li class="candidates"><span class="icon"><i
+                                            class="fa-solid fa-user-group"></i></span>Candidates</li>
+                                <li class="resumes"><span class="icon"><i class="fa-solid fa-file"></i></span>Resumes
+                                </li>
+                            </ul>
+
+                            <p>Organization</p>
+
+                            <ul>
+                                <div>
+                                    <li class="employee-management"><span class="icon"><i
+                                                class="fa-solid fa-user"></i></span>Employee Management
+                                    </li>
+                                    <li class="leave-management"><span class="icon"><i
+                                                class="fa-solid fa-book-open"></i></span>Leave Management
+                                    </li>
+                                    <li class="performance-management"><span class="icon"><i
+                                                class="fa-solid fa-scale-balanced"></i></span>Performance
+                                        Management
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <p>Kris Pay</p>
+
+                            <div>
+                                <ul>
+                                    <li class="payroll"><span class="icon"><i
+                                                class="fa-solid fa-money-bill-wave"></i></span>Payroll
+                                        Management</li>
+                                </ul>
+                            </div>
+
+                            <span class="power-off"><i class="fa-solid fa-power-off"></i></span>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button">Log Out</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-8">
+                    <div id="page-three-part-one">
+                        <div>
+                            <i class="fa-solid fa-bars-staggered bars"></i>
+                        </div>
+                        <div class="forms">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div>
+                                <input type="search" placeholder="Search" />
+                                <i class="fa-solid fa-magnifying-glass page-three-magnifier"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="page-two-icons">
+                            <i class="fa-regular fa-bell bell"></i>
+                            <i class="fa-solid fa-wrench wrench"></i>
+                            <i class="fa-regular fa-envelope envelope"></i>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <p><span><i class="fa-solid fa-book-open "></i></span>Leave Management</p>
+                    </div>
+                    <div class="page-three-buttons">
+                        <button type="button" class="btn btn-primary btn-lg">Leave Settings</button>
+                        <button type="button" class="btn btn-primary btn-lg">Leave Recall</button>
+                        <button type="button" class="btn btn-primary btn-lg">Leave History</button>
+                        <button type="button" class="btn btn-primary btn-lg">Relief Officers</button>
+                    </div>
+                    <div class="row">
+
+                        <div id="page-six-part-one">
+                            <div class="col-4 ">
+                                <div>
+                                    <h2>Create Leave Settings</h2>
+                                </div>
+                                <div class="page-six-form-one">
+                                    <div>
+                                        <h6>Leave Plan Name</h6>
+                                        <input class="form-control" type="text" value="Maternity"
+                                            aria-label="readonly input example" readonly>
+                                    </div>
+                                    <div>
+                                        <h6 class="duration">Duration (days)</h6>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>60</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="page-six-form-two">
+                                    <h6>Do you want to activate Leave Recall for this plan ?</h6>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select option from dropdown</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="page-six-form-three">
+                                    <div>
+                                        <h6>Would you like to activate leave bonus</h6>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="page-six-form-three-part-two">
+                                        <h6>How much percentage of leave bonus?</h6>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label"></label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Percentile%">
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="page-six-form-four">
+                                    <h6>Select Leave Allocation</h6>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Senior Level</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="page-six-form-five">
+                                    <h6>Reason for Recall</h6>
+                                    <input class="form-control" type="text" aria-label="readonly input example"
+                                        readonly>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-success " type="button">Create</button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-4">
+                                <div id="page-six-part-two">
+                                    <div>
+                                        <h2>Manage Leave Settings</h2>
+                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Leave Plan </th>
+                                                <th>Duration(s)</th>
+                                                <th>Recall /Autorenew</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Maternity</td>
+                                                <td>60</td>
+                                                <td>No/ No</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Actions</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="table">
+                                                <td>Sick </td>
+                                                <td>14</td>
+                                                <td>No/Yes</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Actions</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Compassionate</td>
+                                                <td>30</td>
+                                                <td>No/No</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Actions</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="table">
+                                                <td>Exam</td>
+                                                <td>20</td>
+                                                <td>No/No</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Actions</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Paternity</td>
+                                                <td>60</td>
+                                                <td>No/No</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Actions</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr class="table">
+                                                <td>Casual</td>
+                                                <td>10</td>
+                                                <td>Yes/No</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Actions</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Exam</td>
+                                                <td>20</td>
+                                                <td>No/No</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Actions</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="parent-seven">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4" style="width: 30%;margin-left: -24rem;">
+                    <div id="page-three">
+                        <img class="page-three-logo" src="./assets/kris logo 2 1.png" />
+                        <div class="admin">
+                            <div>
+                                <img src="./assets/Group 46.png" />
+                            </div>
+                            <div class="kris-admin">
+                                <h4>KRIS Admin</h4>
+                                <p>Admin</p>
+                            </div>
+                        </div>
+                        <div class="page-three-menu">
+
+                            <p>Features</p>
+
+                            <ul class="dashboard">
+                                <li><span class="icon"><i class="fa-solid fa-border-all"></i></span>Dashboard</li>
+                                <li><span class="icon"><i class="fa-solid fa-envelope"></i></span>Messages</li>
+                            </ul>
+
+                            <p>Recruitement</p>
+
+                            <ul>
+                                <li class="jobs"><span class="icon"><i class="fa-solid fa-suitcase"></i></span>Jobs</li>
+                                <li class="candidates"><span class="icon"><i
+                                            class="fa-solid fa-user-group"></i></span>Candidates</li>
+                                <li class="resumes"><span class="icon"><i class="fa-solid fa-file"></i></span>Resumes
+                                </li>
+                            </ul>
+
+                            <p>Organization</p>
+
+                            <ul>
+                                <div>
+                                    <li class="employee-management"><span class="icon"><i
+                                                class="fa-solid fa-user"></i></span>Employee Management
+                                    </li>
+                                    <li class="leave-management"><span class="icon"><i
+                                                class="fa-solid fa-book-open"></i></span>Leave Management
+                                    </li>
+                                    <li class="performance-management"><span class="icon"><i
+                                                class="fa-solid fa-scale-balanced"></i></span>Performance
+                                        Management
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <p>Kris Pay</p>
+
+                            <div>
+                                <ul>
+                                    <li class="payroll"><span class="icon"><i
+                                                class="fa-solid fa-money-bill-wave"></i></span>Payroll
+                                        Management</li>
+                                </ul>
+                            </div>
+
+                            <span class="power-off"><i class="fa-solid fa-power-off"></i></span>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button">Log Out</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-8">
+                    <div id="page-three-part-one">
+                        <div>
+                            <i class="fa-solid fa-bars-staggered bars"></i>
+                        </div>
+                        <div class="forms">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div>
+                                <input type="search" placeholder="Search" />
+                                <i class="fa-solid fa-magnifying-glass page-three-magnifier"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="page-two-icons">
+                            <i class="fa-regular fa-bell bell"></i>
+                            <i class="fa-solid fa-wrench wrench"></i>
+                            <i class="fa-regular fa-envelope envelope"></i>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <p>Employee Mgmt / Employee Profile / JohnDoe</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3 ">
+                            <div id="page-six-part-one">
+
+                                <div id="page-seven-parent-one">
+                                    <div id="child">
+                                        <div>
+                                            <ul>
+                                                <li onclick="selectTab(0)" class="details">Personal Details</li>
+                                                <li onclick="selectTab(1)" class="details">Contact Details</li>
+                                                <li onclick="selectTab(2)" class="details">Next of kin Details</li>
+                                                <li onclick="selectTab(3) " class="details">Eduacational Qualifications
+                                                </li>
+                                                <li onclick="selectTab(4)" class="details">Guarantor Details</li>
+                                                <li onclick="selectTab(5)" class="details">Family Details</li>
+                                                <li onclick="selectTab(6)" class="details">Job Details</li>
+                                                <li onclick="selectTab(7)" class="details">Financial Details</li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div id="page-six-part-two">
+                                <div>
+                                    <h2>Create Leave Settings</h2>
+                                </div>
+                                <div class="page-six-form-one">
+                                    <div>
+                                        <h6>Leave Plan Name</h6>
+                                        <input class="form-control" type="text" value="Maternity"
+                                            aria-label="readonly input example" readonly>
+                                    </div>
+                                    <div>
+                                        <h6 class="duration">Duration (days)</h6>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>60</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="page-six-form-two">
+                                    <h6>Do you want to activate Leave Recall for this plan ?</h6>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select option from dropdown</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="page-six-form-three">
+                                    <div>
+                                        <h6>Would you like to activate leave bonus</h6>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="page-six-form-three-part-two">
+                                        <h6>How much percentage of leave bonus?</h6>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label"></label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Percentile%">
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="page-six-form-four">
+                                    <h6>Select Leave Allocation</h6>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Senior Level</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="page-six-form-five">
+                                    <h6>Reason for Recall</h6>
+                                    <input class="form-control" type="text" aria-label="readonly input example"
+                                        readonly>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-success " type="button">Create</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+    <script>
+        function login() {
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+
+            document.getElementById('enterEmail').innerHTML = null;
+            document.getElementById('enterPassword').innerHTML = null;
+
+            if (email.length === 0) {
+                document.getElementById('enterEmail').innerHTML = 'Please enter email';
+
+            }
+            if (password.length === 0) {
+                document.getElementById('enterPassword').innerHTML = 'Please enter password';
+            }
+
+        }
+
+
+
+        function selectTab(selectedTab) {
+            var info = document.getElementsByClassName('details');
+
+            for (var i = 0; i < info.length; i++) {
+                info[i].style.backgroundColor = 'rgb(18,28,62)';
+                info[i].style.color = 'white';
+                if (i === selectedTab) {
+                    info[i].style.backgroundColor = '#FFC20E';
+                    info[i].style.color = 'black';
+                }
+            }
+        }
+        selectTab(0);
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/bbf98b1d78.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
